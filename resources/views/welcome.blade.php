@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Psicologia de la ansiedadansiedad</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -45,18 +45,27 @@
             }
 
             .title {
-                font-size: 84px;
+                font-size: 3rem;
+            }
+            .links {
+                background: rgb(2, 227, 235);
+                border-radius:5px;
             }
 
-            .links > a {
+            .links > a {                
                 color: #636b6f;
-                padding: 0 25px;
+                padding: .5rem 1.5rem;
+                display:inline-block;
                 font-size: 13px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
+                transition:all .2s ease;;
             }
+            .links > a:nth-child(1){border-right:1px solid #ededed;}
+            .links > a:hover{transform:scale(1.02) translateY(-2px);
+                box-shadow:0 0 3px 3px rgba(0,0,0,.2);border-radius:5px;}
 
             .m-b-md {
                 margin-bottom: 30px;
@@ -81,19 +90,10 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Psicologia de la ansiedad
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+                
             </div>
         </div>
     </body>
