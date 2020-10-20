@@ -22,6 +22,14 @@ class DatabaseSeeder extends Seeder
 			'name' => 'Juan Carlos Molina',
 			'email' => 'juanc@hotmail.com',
 			'password' => bcrypt('password.es.user'),
-		]);
+        ]);
+        
+        DB::table('results')->insert([
+			'result' => '87',
+        ]);
+        DB::table('results')->insert([
+			'result' => '80',
+        ]);
+        
     }
 }

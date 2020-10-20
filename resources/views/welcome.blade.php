@@ -12,13 +12,21 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
             }
+
+            body::-webkit-scrollbar {width:1px;height:20px;background:#49d2fe;}
+            body::-webkit-scrollbar-thumb {background:#024358;border-radius: 2px;}
+
+            .bgCreate {width:100%;height:100%;
+            top:0px;left: 0;
+            position:absolute;z-index:-2;}
+            .bgCreate img{width:100%;height:100%;
+            object-fit:cover;position:fixed}
 
             .full-height {
                 height: 100vh;
@@ -44,11 +52,16 @@
                 text-align: center;
             }
 
-            .title {
+            .title {display:block;
+                line-height:2rem;
+                padding: 2rem;
+                background:#02e3eb;;
+                border-radius:1rem;
                 font-size: 3rem;
+                font-style: italic
             }
             .links {
-                background: rgb(2, 227, 235);
+                background: #02e3eb;
                 border-radius:5px;
             }
 
@@ -77,7 +90,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/dashboard') }}">Panel</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
 
@@ -90,11 +103,14 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Psicologia de la ansiedad
+                    Mi registro de pulsaciones
                 </div>
 
                 
             </div>
         </div>
+        <div class="bgCreate">
+            <img src="{{ asset('img/bgHome.jpg') }}" alt="">
+         </div>
     </body>
 </html>

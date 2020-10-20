@@ -1,17 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
 Route::get('/', function () {
     return view('welcome');
@@ -20,3 +10,14 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+
+Route::group(['prefix' => 'resultados', 'middleware' =>  ['auth']], function() {
+    Route::get('/', 'ResultController@index')->name('results'); 
+    Route::get('/create', 'ResultController@create')->name('results.create');
+    Route::get('/{results}', 'ResultController@show')->name('results.show');
+    Route::post('/', 'ResultController@store')->name('results.store');
+    Route::get('/{results}/edit', 'ResultController@edit')->name('results.edit');
+    Route::patch('/{results}', 'ResultController@update')->name('results.update');
+    Route::delete('/{results}', 'ResultController@destroy')->name('results.destroy');
+});
