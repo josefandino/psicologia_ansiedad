@@ -10,13 +10,22 @@
 <p> DB_PASSWORD=Contraseña si tiene o si no dejar este campo en blanco </p>
 <p> ir a la terminal y escribir: composer install && composer update </p>
 <p> luego npm install && run dev </p>
-<p> lEjecutar las migraciones con: </p>
+<p> Ejecutar las migraciones con: </p>
 <p> php artisan migrate </p>
 <p> si la DB tiene información ejecuta lo siguiente</p>
 <p> php artisan migrate:fresh </p>
 <p> si desea crear un usuario por defecto: </p>
 
 <p> php artisan migrate --seed</p>
+
+<p> Como Admin </p>
+<p> admin@admin.com</p>
+<p> password.es.admin </p>
+
+<p> Como Usuario </p>
+<p> juanc@hotmail.com </p>
+<p> password.es.user </p>
+
 
 <p> Y listo, ya tiene el sistema instalado, cualquier duda que llegue a tener se puede poner en contacto con nosotros a:  websysfan@gmail.com </p>
 
