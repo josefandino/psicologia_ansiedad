@@ -1,3 +1,26 @@
+<p> escribir lo siguiente en la terminal: </p>
+<p> git clone https://github.com/josefandino/psicologia_ansiedad.git </p>
+<p> abrir el proyecto con un editor de código,</p>
+<p> duplicar el archivo .env example </p>
+<p> cambiarle el nombre .env </p>
+<p> cambiarle el nombre .env</p>
+<p> crear una base de datos y agregar el nombre a las variables de entorno en: </p>
+<p> DB_DATABASE=NombreDeSuBaseDeDatos </p>
+<p> DB_USERNAME=SuUsuario por lo general es: root</p>
+<p> DB_PASSWORD=Contraseña si tiene o si no dejar este campo en blanco </p>
+<p> ir a la terminal y escribir: composer install && composer update </p>
+<p> luego npm install && run dev </p>
+<p> lEjecutar las migraciones con: </p>
+<p> php artisan migrate </p>
+<p> si la DB tiene información ejecuta lo siguiente</p>
+<p> php artisan migrate:fresh </p>
+<p> si desea crear un usuario por defecto: </p>
+
+<p> php artisan migrate --seed</p>
+
+<p> Y listo, ya tiene el sistema instalado, cualquier duda que llegue a tener se puede poner en contacto con nosotros a:  websysfan@gmail.com </p>
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
